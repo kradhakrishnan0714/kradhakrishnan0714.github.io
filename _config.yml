@@ -27,10 +27,7 @@ url: "https://kradhakrishnan0714.github.io" # the base hostname & protocol for y
 github_username:  kradhakrishnan0714
 
 # Minimal Mistakes theme settings
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default"  # Options: default, dark, air, contrast
-show_downloads: false
-search: true
+theme: minima
 
 # Navigation
 header_pages:
@@ -38,51 +35,3 @@ header_pages:
   - cv.md
   - professional-projects.md
   - data-portfolio.md
-
-# Collections for projects
-collections:
-  professional_projects:
-    output: true
-    permalink: /professional-projects/:name/
-  data_portfolio:
-    output: true
-    permalink: /data-portfolio/:name/
-
-# Defaults for layouts
-defaults:
-  - scope:
-      path: ""
-      type: "professional_projects"
-    values:
-      layout: "single"
-      author_profile: true
-      share: true
-      comments: false
-  - scope:
-      path: ""
-      type: "data_portfolio"
-    values:
-      layout: "single"
-      author_profile: true
-      share: true
-      comments: false
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
