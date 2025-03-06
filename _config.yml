@@ -28,6 +28,7 @@ github_username:  kradhakrishnan0714
 
 # Minimal Mistakes theme settings
 theme: minima
+minimal_mistakes_skin: "default"
 
 # Navigation
 header_pages:
