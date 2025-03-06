@@ -18,54 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Karthik Radhakrishnan's Portfolio
+title: Karthik's Portfolio
 email: karthikpsna@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
- "A showcase of my projects, CV and repositories"
+"Hi, This is my personal website to showcase of my projects, CV and repositories"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kradhakrishnan0714.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  kradhakrishnan0714
+twitter_username: jekyllrb
+github_username:  jekyll
 
-# Minimal Mistakes theme settings
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default"  # Options: default, dark, air, contrast
-show_downloads: false
-search: true
-
-# Navigation
-header_pages:
-  - about.md
-  - cv.md
-  - professional-projects.md
-  - data-portfolio.md
-
-# Collections for projects
-collections:
-  professional_projects:
-    output: true
-    permalink: /professional-projects/:name/
-  data_portfolio:
-    output: true
-    permalink: /data-portfolio/:name/
-
-# Defaults for layouts
-defaults:
-  - scope:
-      path: ""
-      type: "professional_projects"
-    values:
-      layout: "single"
-      author_profile: true
-      share: true
-      comments: false
-  - scope:
-      path: ""
-      type: "data_portfolio"
-    values:
-      layout: "single"
-      author_profile: true
-      share: true
-      comments: false
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
