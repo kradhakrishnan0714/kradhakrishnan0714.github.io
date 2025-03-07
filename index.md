@@ -1,16 +1,16 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-title: Karthik Radhakrishnan's Portfolio
-author_profile: true
+layout: default
+title: "Home"
 ---
 
-# Welcome to My Portfolio
+# Welcome to Karthik's Website
 
-Here are some of my projects:
+Hello there! I’m Karthik, a Quality Engineering Manager with nearly two decades of experience in 
+managing and testing data engineering projects. I’m also pursuing my Master of Science in Data Science. 
+Have a look around to learn more about me, my work, and my projects.
 
-{% for project in site.projects %}
-- [{{ project.title }}]({{ project.url }})
-  - {{ project.description }}
-{% endfor %}
+- [About Me](/about)
+- [My CV](/cv)
+- [Data Portfolio](/projects/personal)
+- [Professional Projects](/projects/professional)
+
