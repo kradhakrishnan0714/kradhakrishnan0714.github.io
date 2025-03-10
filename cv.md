@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: single
 title: "CV"
+permalink: /cv/
 ---
 
 ## Karthik Radhakrishnan

@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "CV"
+    url: /cv/
+  - title: "Data Portfolio"
+    url: /projects/personal/
+  - title: "Professional Projects"
+    url: /projects/professional/

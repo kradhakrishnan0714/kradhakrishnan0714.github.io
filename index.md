@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: home
 title: "Home"
+posts_limit: 0   # Hides recent posts by limiting the number to zero
+list_title: ""   # Clears the heading for the posts section
 ---
 
-# Welcome to Karthik's Website
+# Welcome to my portfolio!
 
 Hello there! I’m Karthik, a Quality Engineering Manager with nearly two decades of experience in 
 managing and testing data engineering projects. I’m also pursuing my Master of Science in Data Science. 

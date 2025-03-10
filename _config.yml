@@ -26,8 +26,21 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kradhakrishnan0714.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #github_username:  kradhakrishnan0714
 
-# theme settings
-theme: minima
+# Use the Minimal Mistakes remote theme
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+
+# This tells Jekyll to look for your SCSS
+sass:
+  style: compressed
 
 # Navigation
 nav:
@@ -40,7 +53,14 @@ nav:
   - text: "Professional Projects"
     url: "/projects/professional"
 
-# (Optional) If you want to enable plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+
+collections:
+  personal:
+    output: true
+    permalink: /projects/personal/:title/
+  professional:
+    output: true
+    permalink: /projects/professional/:title/
+
+minimal_mistakes:
+  show_feed_link: false
