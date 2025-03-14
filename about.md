@@ -11,4 +11,4 @@ Currently, I lead transformative projects at **PwC** in Dallas, implementing aut
 
 I’m passionate about continuous learning—currently pursuing a **Master’s in Data Science** at **Southern Methodist University (2024-2026)**—and hold certifications in Python for Data Science, Big Data Analysis with SQL, and Microsoft Azure Fundamentals. My technical toolkit includes **SQL, Python, R, machine learning libraries (scikit-learn)**, complemented by a knack for data visualization that brings clarity to complex insights.
 
-As a leader, I thrive on building strong, collaborative teams, driving strategic planning, and fostering open communication to deliver exceptional results. Thank you for visiting my site. Feel free to check out my [CV](/cv) to see more details about my professional journey.
+As a leader, I thrive on building strong, collaborative teams, driving strategic planning, and fostering open communication to deliver exceptional results. Thank you for visiting. Feel free to check out my [CV](/cv) to see more details about my professional journey.
