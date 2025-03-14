@@ -1,19 +1,13 @@
 ---
 layout: single
-title: "About"
+title: "About Me"
 permalink: /about/
 ---
 
-# About Me
+Hello! I’m **Karthik**, a Senior Manager in Quality Engineering with over 19 years of experience in data quality assurance, analytics, and ETL test automation. I specialize in ensuring data accuracy and efficiency, empowering organizations to make informed, data-driven decisions.
 
-I’m **Karthik**, a Quality Engineering Manager with 19 years of experience driving test maturity 
-improvement initiatives across data engineering projects. I’ve worked extensively with cloud data 
-warehouses like **Snowflake** and **Azure SQL**, and I’m passionate about implementing 
-automation-first approaches to streamline data testing.
+Currently, I lead transformative projects at **PwC** in Dallas, implementing automation-first approaches to streamline data testing from 2021. 
 
-I’m currently enrolled in the **Master of Science in Data Science** program at **Southern Methodist University** (2024-2026). 
-I love exploring new technologies, especially around **machine learning** and **generative AI** for 
-efficiency gains. When I'm not busy debugging or analyzing data, you’ll find me experimenting with 
-new coffee blends (because a good coffee is a data scientist’s best friend, right?).
+I’m passionate about continuous learning—currently pursuing a **Master’s in Data Science** at **Southern Methodist University (2024-2026)**—and hold certifications in Python for Data Science, Big Data Analysis with SQL, and Microsoft Azure Fundamentals. My technical toolkit includes **SQL, Python, R, machine learning libraries (scikit-learn)**, and platforms like Snowflake and Azure Databricks, complemented by a knack for data visualization that brings clarity to complex insights.
 
-Feel free to check out my [CV](/cv) to see more details about my professional journey.
+As a leader, I thrive on building strong, collaborative teams, driving strategic planning, and fostering open communication to deliver exceptional results. Thank you for visiting my site. Feel free to check out my [CV](/cv) to see more details about my professional journey.
