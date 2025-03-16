@@ -1,5 +1,4 @@
-/* Force exactly 3 items per row in the grid */
 .archive--grid .archive__item {
-    flex: 0 0 33.3333% !important;
-    max-width: 33.3333% !important;
-  }
+  flex: 0 0 calc(33.3333% - 20px) !important;
+  max-width: calc(33.3333% - 20px) !important;
+}
