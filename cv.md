@@ -73,7 +73,7 @@ Below is a quick snapshot of my CV.
 ## Certifications
 
 - **Python for Data Science** - (UC San Diego University)
-- **Modern Big Data Analysis with SQL - (Cloudera)
+- **Modern Big Data Analysis with SQL** - (Cloudera)
 - **Microsoft Certified: Azure Fundamentals**
 
 ---
