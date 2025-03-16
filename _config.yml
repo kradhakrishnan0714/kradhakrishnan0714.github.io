@@ -53,12 +53,13 @@ nav:
 
 
 collections:
-  personal:
-    output: true
-    permalink: /projects/personal/:title/
   professional:
     output: true
     permalink: /projects/professional/:title/
+  personal:
+    output: true
+    permalink: /projects/personal/:title/
+
 
 minimal_mistakes:
   show_feed_link: false

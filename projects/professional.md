@@ -3,7 +3,7 @@ layout: collection
 title: "Professional Projects"
 collection: professional
 entries_layout: grid
-classes: wide
+classes: columns-3
 permalink: /projects/professional/
 ---
 
