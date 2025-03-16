@@ -2,16 +2,8 @@
 ---
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-.columns-3 .archive__item {
-  width: 33.3333%;
-  float: left;
-}
-
-/* Clear floats at the end of the row if needed */
-.columns-3 .archive {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Force exactly 3 items per row in the grid */
+.archive--grid .archive__item {
+  flex: 0 0 33.3333% !important;
+  max-width: 33.3333% !important;
 }
