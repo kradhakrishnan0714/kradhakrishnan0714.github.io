@@ -7,4 +7,4 @@ classes: wide
 permalink: /projects/professional/
 ---
 
-My professional projects, displayed in a card-like grid layout.
+This section presents a curated selection of my professional projects. Each project reflects my engagement with diverse technologies and platforms, addressing complex challenges while enhancing my expertise in data quality assurance and data analytics. Please explore to learn more about my contributions. 

@@ -5,7 +5,7 @@ permalink: /about/
 classes: wide
 ---
 
-Hello! I’m **Karthik**, a Senior Manager in Quality Engineering with over 19 years of experience in data quality assurance, analytics, and ETL test automation. I specialize in ensuring data accuracy and efficiency, empowering organizations to make informed, data-driven decisions.
+Hello there! I’m **Karthik**, a Senior Manager in Quality Engineering with over 19 years of experience in data quality assurance, analytics, and ETL test automation. I specialize in ensuring data accuracy and efficiency, empowering organizations to make informed, data-driven decisions.
 
 Currently, I lead transformative projects at **PwC** in Dallas, implementing automation-first approaches to streamline data testing from 2021. 
 

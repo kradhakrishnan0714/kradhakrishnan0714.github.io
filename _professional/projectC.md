@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "ETL Automation for Global Retailer"
+title: "Azure SQL Cloud Migration & ETL automation"
 date: 2025-03-08
 ---
 
-**Description**: Automated ETL testing for a large retail client.  
-**Tech Stack**: Snowflake, Azure Data Factory, Datagaps  
-**Impact**: Reduced manual testing effort by 80%.
+**Description**: Datawarehouse systems used for employee compliance monitoring were migrated from on-premises SQL server to cloud-based Azure SQL. Managed the validation of seamless data migration to cloud systems and Azure SSIS data pipelines created in cloud for data processing.  
+**Tech Stack**: SQL, DataGaps (ETL Automation Tool), Azure Data Factory 
+**Impact**: 80% reduction in regression effort through ETL automation.
