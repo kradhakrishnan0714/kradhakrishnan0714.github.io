@@ -1,6 +1,12 @@
 ---
 layout: home
 title: "About Me!"
+author_profile: true
+classes: 
+  - sidebar-left
+  - wide
+sidebar:
+  - nav
 posts_limit: 0   # Hides recent posts by limiting the number to zero
 list_title: ""   # Clears the heading for the posts section
 ---

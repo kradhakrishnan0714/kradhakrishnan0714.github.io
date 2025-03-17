@@ -4,6 +4,7 @@ title: "CV"
 author_profile: true
 classes: 
   - sidebar-left
+  - wide
 sidebar:
   - nav
 permalink: /cv/
