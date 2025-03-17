@@ -18,12 +18,10 @@ date: 2025-03-08
   alt="Model Comparison 2" 
   style="max-width: 100%; height: auto;" />
 
-<iframe 
+<img 
   src="/assets/visuals/capital_cost_prediction_model_comparison1.png" 
-  width="100%" 
-  height="600px">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+  alt="Model Comparison 2" 
+  style="max-width: 100%; height: auto;" />
 
 
 
