@@ -66,7 +66,7 @@ minimal_mistakes:
 
 author:
   name: "Karthik Radhakrishnan"
-  avatar: /assets/images/karthik.jpg  # path to your photo
+  avatar: "/assets/images/Karthik.jpg"  # path to your photo
   bio: "Senior Manager in QE, machine learning enthusiast..."
   location: "Dallas, TX"
   links:
@@ -76,6 +76,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/karthikeyanradhakrishnan1"
-    - label: "Email"
+    - label: "karthikpsna@outlook.com"
       icon: "fas fa-envelope"
       url: "mailto:karthikpsna@outlook.com"
