@@ -7,4 +7,4 @@ classes: wide
 permalink: /projects/personal/
 ---
 
-Here are my personal data projects, displayed in a card-like grid layout.
+Here are my personal data projects that demonstrate my skills in predictive modeling, machine learning, data analysis, and visualization.
