@@ -3,7 +3,12 @@ layout: collection
 title: "Professional Projects"
 collection: professional
 entries_layout: grid
-classes: wide
+author_profile: true
+classes: 
+  - sidebar-left
+  - wide
+sidebar:
+  - nav
 permalink: /projects/professional/
 ---
 

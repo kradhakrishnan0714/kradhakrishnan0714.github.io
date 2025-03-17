@@ -3,7 +3,12 @@ layout: collection
 title: "Data Portfolio (Personal Projects)"
 collection: personal
 entries_layout: grid
-classes: wide
+author_profile: true
+classes: 
+  - sidebar-left
+  - wide
+sidebar:
+  - nav
 permalink: /projects/personal/
 ---
 
