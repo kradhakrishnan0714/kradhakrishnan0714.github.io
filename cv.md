@@ -2,16 +2,14 @@
 layout: single
 title: "CV"
 author_profile: true
+classes: 
+  - sidebar-left
 sidebar:
   - nav
 permalink: /cv/
 ---
 
 ## Karthik Radhakrishnan
-Senior Manager – Quality Engineering, Data QA & Analytics  
-**Email**: karthikpsna@outlook.com  
-**GitHub**: [kradhakrishnan0714](https://github.com/kradhakrishnan0714)  
-**LinkedIn**: [https://www.linkedin.com/in/karthikeyanradhakrishnan1/](https://www.linkedin.com/in/karthikeyanradhakrishnan1/)
 
 Below is a quick snapshot of my CV. 
 ---
