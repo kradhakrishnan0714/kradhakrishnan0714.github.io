@@ -9,7 +9,7 @@ date: 2025-03-08
  
 **Tech Stack**: Python - Scikit-learn
 
-## Source Code
+## Source Code & Model Results
 [View on GitHub](https://github.com/kradhakrishnan0714/Machine-Learning-I/blob/main/Predicting%20Capital%20Costs.ipynb)
 
 ## Important Visualizations
