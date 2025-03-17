@@ -12,7 +12,7 @@ date: 2025-03-08
 ## Analysis & Model results
 
 <iframe 
-  src="/assets/docs/Project1Slides.pdf" 
+  src="/assets/docs/Predicting success of marketing campaigns.pdf" 
   width="100%" 
   height="600px" 
   style="border: none;">
@@ -20,7 +20,7 @@ date: 2025-03-08
   <a href="/assets/docs/Predicting success of marketing campaigns.pdf">Download PDF</a>
 </iframe>
 
-## Source Code
+## Source Code & Visuals
 
 <iframe 
   src="/assets/html/predicting success of marketing campaigns.html" 
