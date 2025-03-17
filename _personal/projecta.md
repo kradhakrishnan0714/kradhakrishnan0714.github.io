@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Predicting Capital gain & loss"
+classes: wide
 date: 2025-03-08
 ---
 
