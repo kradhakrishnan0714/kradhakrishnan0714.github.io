@@ -13,10 +13,13 @@ date: 2025-03-08
 
 ## Important Visualizations
 
-![Model Comparison 1](/assets/visuals/capital_cost_prediction_model_comparison1.png)
+<img 
+  src="/assets/visuals/capital_cost_prediction_model_comparison1.png" 
+  alt="Model Comparison 2" 
+  style="max-width: 100%; height: auto;" />
 
 <iframe 
-  src="/assets/visuals/capital_cost_prediction_model_comparison2.png" 
+  src="/assets/visuals/capital_cost_prediction_model_comparison1.png" 
   width="100%" 
   height="600px">
   <p>Your browser does not support iframes.</p>
