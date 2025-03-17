@@ -63,3 +63,19 @@ collections:
 
 minimal_mistakes:
   show_feed_link: false
+
+author:
+  name: "Karthik Radhakrishnan"
+  avatar: "/assets/images/karthik.jpg"  # path to your photo
+  bio: "Senior Manager in QE, machine learning enthusiast..."
+  location: "Dallas, TX"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/kradhakrishnan0714"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/karthikeyanradhakrishnan1"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:karthikpsna@outlook.com"

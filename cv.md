@@ -1,6 +1,9 @@
 ---
 layout: single
 title: "CV"
+author_profile: true
+sidebar:
+  - nav
 permalink: /cv/
 ---
 
