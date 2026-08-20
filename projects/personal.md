@@ -2,7 +2,6 @@
 layout: project-index
 title: "Data Portfolio"
 collection: personal
-columns: 4
 permalink: /projects/personal/
 ---
 

@@ -110,10 +110,17 @@ a {
 .greedy-nav {
   background: var(--kr-surface);
 
+  // The wordmark is hidden rather than blanked in _config.yml: an empty <a>
+  // would still sit in the accessibility tree as an unlabeled link. display:
+  // none removes it entirely, and "Home" in the nav covers the same journey.
+  // site.title is left intact so <title> tags and SEO metadata keep the name.
   .site-title {
-    font-family: $sans-serif-narrow;
-    font-weight: 700;
-    letter-spacing: -0.01em;
+    display: none;
+  }
+
+  // With the wordmark gone, push the links back to the right edge.
+  .visible-links {
+    margin-left: auto;
   }
 
   a {
@@ -136,6 +143,20 @@ a {
 
 .page__title {
   text-wrap: balance;
+}
+
+// Wide results tables squeeze to illegible column widths on phones. Below the
+// breakpoint, let them scroll horizontally on their own instead of wrapping
+// every cell — the numbers stay comparable across a row.
+@media (max-width: 700px) {
+  .page__content table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
 }
 
 .page__footer {
@@ -599,7 +620,110 @@ button:focus-visible {
 }
 
 // ==========================================================================
-// 10. ABOUT PROSE
+// 10. CAPSTONE FEATURE
+//     A single project given more room than the grid affords, because its
+//     results carry numbers worth reading rather than truncating.
+// ==========================================================================
+
+.kr-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 40px;
+  align-items: start;
+  padding: 28px;
+  background: var(--kr-surface);
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+  box-shadow: var(--kr-shadow);
+  transition: border-color 0.18s;
+
+  .kr-band--surface & {
+    background: var(--kr-paper);
+  }
+
+  &:hover {
+    border-color: var(--kr-accent);
+  }
+
+  h3 {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+    line-height: 1.18;
+    letter-spacing: -0.012em;
+    margin: 0 0 12px;
+
+    a {
+      color: var(--kr-ink);
+
+      &:hover {
+        color: var(--kr-accent);
+        text-decoration: none;
+      }
+    }
+  }
+
+  p {
+    margin: 0 0 16px;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--kr-ink-2);
+    max-width: 60ch;
+  }
+
+  &__venue {
+    margin-bottom: 14px;
+  }
+}
+
+.kr-feature__metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--kr-line);
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.kr-feature__metric {
+  background: var(--kr-surface);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .kr-band--surface & {
+    background: var(--kr-paper);
+  }
+
+  .value {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--kr-accent);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.015em;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    color: var(--kr-muted);
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 880px) {
+  .kr-feature {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 22px;
+  }
+}
+
+// ==========================================================================
+// 11. ABOUT PROSE
 // ==========================================================================
 
 .kr-prose {
@@ -623,7 +747,7 @@ button:focus-visible {
 }
 
 // ==========================================================================
-// 11. TOOLKIT + CONTACT
+// 12. TOOLKIT + CONTACT
 // ==========================================================================
 
 .kr-toolkit {
@@ -703,7 +827,7 @@ button:focus-visible {
 }
 
 // ==========================================================================
-// 11. RESPONSIVE + MOTION
+// 13. RESPONSIVE + MOTION
 // ==========================================================================
 
 @media (max-width: 880px) {

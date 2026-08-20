@@ -95,7 +95,51 @@ layout: default
 </section>
 {% endif %}
 
-{% if site.personal.size > 0 %}
+{%- comment -%}
+  A project flagged `featured` is pulled out of the grid and given a wider
+  block of its own, so its result metrics can be read rather than truncated.
+{%- endcomment -%}
+{% assign capstone = site.personal | where: "featured", true | first %}
+{% assign portfolio_rest = site.personal | where_exp: "p", "p.featured != true" %}
+
+{% if capstone %}
+<section class="kr-band" id="capstone">
+  <div class="kr-wrap">
+    <div class="kr-sechead">
+      <div>
+        <h2>{{ page.capstone_title | default: "Capstone research" }}</h2>
+        <p>{{ page.capstone_blurb }}</p>
+      </div>
+      {% if capstone.venue %}<span class="kr-seclink">{{ capstone.venue }}</span>{% endif %}
+    </div>
+
+    <article class="kr-feature">
+      <div class="kr-feature__body">
+        <h3><a href="{{ capstone.url | relative_url }}">{{ capstone.title }}</a></h3>
+        {% if capstone.card_summary %}<p>{{ capstone.card_summary }}</p>{% endif %}
+        {% if capstone.tech %}
+          <div class="kr-chips">
+            {% for item in capstone.tech %}<span class="kr-chip">{{ item }}</span>{% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if capstone.highlights %}
+        <div class="kr-feature__metrics">
+          {% for h in capstone.highlights %}
+            <div class="kr-feature__metric">
+              <span class="value">{{ h.value }}</span>
+              <span class="label">{{ h.label }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </article>
+  </div>
+</section>
+{% endif %}
+
+{% if portfolio_rest.size > 0 %}
 <section class="kr-band kr-band--surface" id="portfolio">
   <div class="kr-wrap">
     <div class="kr-sechead">
@@ -103,10 +147,11 @@ layout: default
         <h2>{{ page.portfolio_title | default: "Data portfolio" }}</h2>
         <p>{{ page.portfolio_blurb }}</p>
       </div>
+      <a class="kr-seclink" href="{{ '/projects/personal/' | relative_url }}">All {{ site.personal.size }} projects &rarr;</a>
     </div>
 
-    <div class="kr-cards kr-cards--four">
-      {% for project in site.personal %}
+    <div class="kr-cards">
+      {% for project in portfolio_rest %}
         {% include project-card.html project=project %}
       {% endfor %}
     </div>

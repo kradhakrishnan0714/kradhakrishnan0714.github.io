@@ -42,6 +42,9 @@ metrics:
 professional_title: "Professional engagements"
 professional_blurb: "Enterprise data programs led end to end — migration, modernization, and the quality frameworks that kept them honest."
 
+capstone_title: "Capstone research"
+capstone_blurb: "Master's capstone at SMU — compact vision-language models fine-tuned for accessibility and deployed to run entirely on the user's own device."
+
 portfolio_title: "Data portfolio"
 portfolio_blurb: "Independent work in predictive modeling, machine learning, and performance analysis — each with source code, results, and the reasoning behind the model choice."
 
