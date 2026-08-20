@@ -1,0 +1,46 @@
+{%- comment -%}
+  Local override of Minimal Mistakes' _includes/head.html.
+
+  The ONLY change from upstream is pinning Font Awesome to a major version.
+  The theme ships `@latest`, an unpinned URL — which is how this site moved
+  from FA 5 to FA 7 with no change on our side. Across majors Font Awesome
+  renames and retires icons (fa-twitter became fa-x-twitter in 7), so
+  `@latest` can break icons at any time.
+
+  Pinning here rather than adding a second <link> in head/custom.html keeps a
+  single Font Awesome download; layering a pinned tag on top of the theme's
+  made the browser fetch both stylesheets and both webfont files.
+
+  Because this file shadows the theme's, upstream changes to head.html will
+  not reach this site — re-sync it when bumping the theme. Bump the FA major
+  deliberately, after checking the icons in _config.yml still exist.
+{%- endcomment -%}
+{% assign locale = include.locale | default: site.locale %}
+<meta charset="utf-8">
+
+{% include seo.html locale=locale %}
+
+{% unless site.atom_feed.hide %}
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endunless %}
+
+{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  {% if site.enable_copy_code_button -%}
+    window.enable_copy_code_button = true;
+  {%- endif %}
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css"></noscript>
+
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
