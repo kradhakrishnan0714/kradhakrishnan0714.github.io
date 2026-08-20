@@ -1,15 +1,9 @@
 ---
-layout: collection
-title: "Data Portfolio (Personal Projects)"
+layout: project-index
+title: "Data Portfolio"
 collection: personal
-entries_layout: grid
-author_profile: true
-classes: 
-  - sidebar-left
-  - wide
-sidebar:
-  - nav
+columns: 4
 permalink: /projects/personal/
 ---
 
-Here are my personal data projects that demonstrate my skills in predictive modeling, machine learning, data analysis, and visualization.
+Independent work in predictive modeling, machine learning, and performance analysis — each with source code, results, and the reasoning behind the model choice.

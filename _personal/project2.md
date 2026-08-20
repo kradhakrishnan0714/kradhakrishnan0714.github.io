@@ -1,8 +1,13 @@
 ---
 layout: single
-title: "Exploratory data analysis on 1994 census database"
+title: "Exploratory Data Analysis on the 1994 Census Database"
 classes: wide
 date: 2025-03-08
+header:
+  teaser: /assets/visuals/census_age_distribution_by_income.png
+teaser_alt: "Age distribution by income bracket"
+card_summary: "Fourteen mixed continuous and discrete features analyzed against a binary income response, evaluated with sensitivity, specificity, PPV, NPV, and AUC-ROC."
+tech: ["Python", "EDA", "AUC-ROC"]
 ---
 
 **Description**: Exploratory data analysis is done on the 1994 census database. This dataset contains 14 features such as Age, workclass, education, Martial status etc. These features are a mix of continuous & discrete variables. Response variable is individual's income. This is provided as binary to denote whether income is greater than $50,000 or not.  

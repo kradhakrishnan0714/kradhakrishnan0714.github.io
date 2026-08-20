@@ -1,0 +1,727 @@
+---
+# Main stylesheet. The empty front matter block is required for Jekyll to process this file.
+---
+
+@charset "utf-8";
+
+// ==========================================================================
+// 1. DESIGN TOKENS
+//    Minimal Mistakes declares all of these with !default, so values set
+//    here (before the theme imports) win over the theme and the skin.
+// ==========================================================================
+
+/* Typefaces ------------------------------------------------------------- */
+$sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif !default;
+$sans-serif-narrow: "IBM Plex Sans Condensed", "IBM Plex Sans", $sans-serif !default;
+$monospace: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+  monospace !default;
+$serif: $sans-serif !default; // keep Georgia from leaking into headings
+
+$global-font-family: $sans-serif !default;
+$header-font-family: $sans-serif-narrow !default;
+$caption-font-family: $sans-serif !default;
+
+/* Palette --------------------------------------------------------------- */
+// Cool, cyan-biased neutrals with a single deep petrol-teal accent.
+$background-color: #f2f5f5 !default;
+$text-color: #0d1417 !default;
+$muted-text-color: #5c6b6d !default;
+$primary-color: #0e6f72 !default;
+
+$link-color: #0e6f72 !default;
+$link-color-hover: #0a5457 !default;
+$link-color-visited: #0e6f72 !default;
+
+$border-color: #d3dcdc !default;
+$lighter-gray: #e9eeee !default;
+$light-gray: #d3dcdc !default;
+$gray: #5c6b6d !default;
+$dark-gray: #3a4a4d !default;
+$darker-gray: #0d1417 !default;
+
+$footer-background-color: #ffffff !default;
+$masthead-link-color: #0d1417 !default;
+$masthead-link-color-hover: #0e6f72 !default;
+$code-background-color: #e9eeee !default;
+
+// ==========================================================================
+// 2. THEME IMPORTS
+// ==========================================================================
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+// ==========================================================================
+// 3. CUSTOM PROPERTIES
+//    Used by the bespoke homepage and card components below.
+// ==========================================================================
+
+:root {
+  --kr-paper: #f2f5f5;
+  --kr-surface: #ffffff;
+  --kr-surface-2: #e9eeee;
+  --kr-ink: #0d1417;
+  --kr-ink-2: #3a4a4d;
+  --kr-muted: #5c6b6d;
+  --kr-line: #d3dcdc;
+  --kr-line-soft: #e2e9e9;
+  --kr-accent: #0e6f72;
+  --kr-accent-ink: #0a5457;
+  --kr-accent-wash: #e2efef;
+  --kr-shadow: 0 1px 2px rgba(13, 20, 23, 0.04);
+}
+
+// ==========================================================================
+// 4. GLOBAL REFINEMENTS TO THE THEME
+// ==========================================================================
+
+body {
+  background-color: var(--kr-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+// Kill the default underlined-link look sitewide; underline on hover instead.
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// Masthead navigation
+.masthead {
+  border-bottom: 1px solid var(--kr-line);
+  background: var(--kr-surface);
+}
+
+.greedy-nav {
+  background: var(--kr-surface);
+
+  .site-title {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    font-size: 0.88rem;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: none;
+      color: var(--kr-accent);
+    }
+  }
+}
+
+// Page headings
+.page__title,
+.archive__subtitle {
+  font-family: $sans-serif-narrow;
+  letter-spacing: -0.015em;
+}
+
+.page__title {
+  text-wrap: balance;
+}
+
+.page__footer {
+  background: var(--kr-surface);
+  border-top: 1px solid var(--kr-line);
+  color: var(--kr-muted);
+}
+
+// Author sidebar
+.author__avatar img {
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+}
+
+.author__name {
+  font-family: $sans-serif-narrow;
+  font-weight: 700;
+}
+
+.author__urls {
+  font-family: $monospace;
+  font-size: 0.78rem;
+}
+
+// Keyboard focus
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--kr-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+// ==========================================================================
+// 5. SHARED PRIMITIVES
+// ==========================================================================
+
+.kr-wrap {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 28px;
+}
+
+.kr-micro {
+  font-family: $monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--kr-muted);
+}
+
+.kr-btn {
+  display: inline-block;
+  font-family: $monospace;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border-radius: 2px;
+  border: 1px solid var(--kr-accent);
+  transition: background 0.16s, color 0.16s, transform 0.16s;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  &--solid {
+    background: var(--kr-accent);
+    color: var(--kr-surface);
+
+    &:hover {
+      background: var(--kr-accent-ink);
+      border-color: var(--kr-accent-ink);
+      color: var(--kr-surface);
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: var(--kr-accent);
+
+    &:hover {
+      background: var(--kr-accent-wash);
+      color: var(--kr-accent-ink);
+    }
+  }
+}
+
+// ==========================================================================
+// 6. HOMEPAGE — MASTHEAD
+// ==========================================================================
+
+.kr-hero {
+  background: var(--kr-surface);
+  border-bottom: 1px solid var(--kr-line);
+
+  .kr-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 56px;
+    padding-block: 84px 72px;
+    align-items: start;
+  }
+}
+
+.kr-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+
+  .rule {
+    height: 1px;
+    width: 44px;
+    background: var(--kr-accent);
+    flex: none;
+  }
+}
+
+.kr-name {
+  font-family: $sans-serif-narrow;
+  font-weight: 700;
+  font-size: clamp(2.7rem, 6.4vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  margin: 0;
+  color: var(--kr-ink);
+
+  .surname {
+    display: block;
+    color: var(--kr-accent);
+  }
+}
+
+.kr-lede {
+  font-size: 1.14rem;
+  line-height: 1.65;
+  color: var(--kr-ink-2);
+  max-width: 34em;
+  margin: 26px 0 0;
+
+  strong {
+    color: var(--kr-ink);
+    font-weight: 600;
+  }
+}
+
+.kr-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.kr-idcard {
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+  background: var(--kr-surface);
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 22%;
+  }
+}
+
+.kr-idrow {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 13px 16px;
+  border-top: 1px solid var(--kr-line-soft);
+
+  .value {
+    font-size: 0.87rem;
+    color: var(--kr-ink);
+    font-weight: 500;
+    line-height: 1.45;
+  }
+}
+
+// ==========================================================================
+// 7. HOMEPAGE — MEASURED IMPACT STRIP
+// ==========================================================================
+
+.kr-metrics {
+  border-bottom: 1px solid var(--kr-line);
+  background: var(--kr-paper);
+
+  .kr-wrap {
+    padding-block: 40px 44px;
+  }
+}
+
+.kr-metrics__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+
+  .rule {
+    height: 1px;
+    background: var(--kr-line);
+    flex: 1;
+  }
+}
+
+.kr-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  background: var(--kr-line);
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+}
+
+.kr-metric {
+  background: var(--kr-paper);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  .value {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--kr-accent);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  .label {
+    font-size: 0.84rem;
+    color: var(--kr-ink-2);
+    line-height: 1.45;
+  }
+}
+
+// ==========================================================================
+// 8. SECTIONS
+// ==========================================================================
+
+.kr-band {
+  padding-block: 76px;
+  border-bottom: 1px solid var(--kr-line);
+
+  &--surface {
+    background: var(--kr-surface);
+  }
+}
+
+.kr-sechead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+
+  // Let the heading block share the row with the section link rather than
+  // stretching full width and forcing a wrap.
+  > div {
+    flex: 1 1 420px;
+    min-width: 0;
+  }
+
+  h2 {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    letter-spacing: -0.015em;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  p {
+    margin: 9px 0 0;
+    color: var(--kr-muted);
+    font-size: 0.95rem;
+    max-width: 46em;
+  }
+}
+
+.kr-seclink {
+  font-family: $monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+// ==========================================================================
+// 9. PROJECT CARDS
+// ==========================================================================
+
+.kr-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 20px;
+
+  &--four {
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  }
+}
+
+.kr-card {
+  background: var(--kr-surface);
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--kr-shadow);
+  transition: border-color 0.18s, transform 0.18s;
+
+  .kr-band--surface & {
+    background: var(--kr-paper);
+  }
+
+  &:hover {
+    border-color: var(--kr-accent);
+    transform: translateY(-2px);
+  }
+
+  &__body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+  }
+
+  h3 {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: 1.14rem;
+    letter-spacing: -0.008em;
+    line-height: 1.22;
+    margin: 0;
+
+    a {
+      color: var(--kr-ink);
+
+      &:hover {
+        color: var(--kr-accent);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &:hover h3 a {
+    color: var(--kr-accent);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--kr-ink-2);
+    line-height: 1.6;
+  }
+}
+
+.kr-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.kr-chip {
+  font-family: $monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  color: var(--kr-muted);
+  border: 1px solid var(--kr-line);
+  border-radius: 2px;
+  padding: 4px 8px;
+  background: var(--kr-surface-2);
+}
+
+.kr-impact {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  border-top: 1px solid var(--kr-line-soft);
+  padding-top: 13px;
+  margin-top: 4px;
+
+  .value {
+    font-family: $sans-serif-narrow;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--kr-accent);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    color: var(--kr-muted);
+    line-height: 1.35;
+  }
+}
+
+// Card thumbnail — real chart, or a schema-grid fallback when a project
+// has no visual of its own.
+.kr-thumb {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-bottom: 1px solid var(--kr-line);
+  background: var(--kr-surface-2);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  &--schema {
+    display: grid;
+    place-items: center;
+    background-color: var(--kr-surface-2);
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--kr-line) 0 1px,
+        transparent 1px 58px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        var(--kr-line) 0 1px,
+        transparent 1px 26px
+      );
+
+    span {
+      font-family: $monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--kr-muted);
+      background: var(--kr-surface);
+      border: 1px solid var(--kr-line);
+      padding: 7px 13px;
+      border-radius: 2px;
+      text-align: center;
+    }
+  }
+}
+
+.kr-band--surface .kr-thumb--schema span {
+  background: var(--kr-paper);
+}
+
+// ==========================================================================
+// 10. ABOUT PROSE
+// ==========================================================================
+
+.kr-prose {
+  max-width: 65ch;
+
+  p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: var(--kr-ink-2);
+    margin: 0 0 1.1em;
+
+    strong {
+      color: var(--kr-ink);
+      font-weight: 600;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ==========================================================================
+// 11. TOOLKIT + CONTACT
+// ==========================================================================
+
+.kr-toolkit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 34px 40px;
+}
+
+.kr-toolgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .kr-micro {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--kr-line);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  li {
+    font-size: 0.93rem;
+    color: var(--kr-ink-2);
+  }
+}
+
+.kr-contact {
+  .kr-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 40px;
+    align-items: end;
+  }
+
+  h2 {
+    font-family: $sans-serif-narrow;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    letter-spacing: -0.02em;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  p {
+    color: var(--kr-ink-2);
+    margin: 14px 0 0;
+    max-width: 34em;
+  }
+}
+
+.kr-links {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  a {
+    font-family: $monospace;
+    font-size: 0.82rem;
+    color: var(--kr-ink);
+    border-bottom: 1px solid var(--kr-line);
+    padding-bottom: 7px;
+    transition: color 0.15s, border-color 0.15s;
+
+    &:hover {
+      color: var(--kr-accent);
+      border-bottom-color: var(--kr-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+// ==========================================================================
+// 11. RESPONSIVE + MOTION
+// ==========================================================================
+
+@media (max-width: 880px) {
+  .kr-hero .kr-wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-block: 56px 48px;
+  }
+
+  .kr-idcard {
+    max-width: 300px;
+  }
+
+  .kr-contact .kr-wrap {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .kr-band {
+    padding-block: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-card,
+  .kr-btn,
+  .kr-links a {
+    transition: none;
+  }
+}

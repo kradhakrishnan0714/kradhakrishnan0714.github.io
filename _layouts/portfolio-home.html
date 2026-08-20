@@ -1,0 +1,159 @@
+---
+layout: default
+---
+
+{% assign hero = page.hero %}
+
+<header class="kr-hero">
+  <div class="kr-wrap">
+    <div>
+      <div class="kr-eyebrow">
+        <span class="rule"></span>
+        <span class="kr-micro">{{ hero.eyebrow }}</span>
+      </div>
+
+      <h1 class="kr-name">{{ hero.first_name }}<span class="surname">{{ hero.last_name }}</span></h1>
+
+      <p class="kr-lede">{{ hero.lede | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+      <div class="kr-cta">
+        {% for button in hero.buttons %}
+          <a class="kr-btn kr-btn--{{ button.style | default: 'ghost' }}" href="{{ button.url | relative_url }}">{{ button.label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <aside class="kr-idcard">
+      {% if site.author.avatar %}
+        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+      {% endif %}
+      <div class="kr-idrows">
+        {% for row in hero.facts %}
+          <div class="kr-idrow">
+            <span class="kr-micro">{{ row.label }}</span>
+            <span class="value">{{ row.value }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </aside>
+  </div>
+</header>
+
+{% if page.metrics %}
+<section class="kr-metrics">
+  <div class="kr-wrap">
+    <div class="kr-metrics__head">
+      <span class="kr-micro">{{ page.metrics_title | default: "Measured impact" }}</span>
+      <span class="rule"></span>
+    </div>
+    <div class="kr-metric-grid">
+      {% for metric in page.metrics %}
+        <div class="kr-metric">
+          <span class="value">{{ metric.value }}</span>
+          <span class="label">{{ metric.label }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% assign featured_pro = site.professional | where: "featured", true %}
+{% if featured_pro.size > 0 %}
+<section class="kr-band" id="professional">
+  <div class="kr-wrap">
+    <div class="kr-sechead">
+      <div>
+        <h2>{{ page.professional_title | default: "Professional engagements" }}</h2>
+        <p>{{ page.professional_blurb }}</p>
+      </div>
+      <a class="kr-seclink" href="{{ '/projects/professional/' | relative_url }}">All {{ site.professional.size }} engagements &rarr;</a>
+    </div>
+
+    <div class="kr-cards">
+      {% for project in featured_pro %}
+        <article class="kr-card">
+          <div class="kr-card__body">
+            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+            {% if project.card_summary %}<p>{{ project.card_summary }}</p>{% endif %}
+            {% if project.tech %}
+              <div class="kr-chips">
+                {% for item in project.tech %}<span class="kr-chip">{{ item }}</span>{% endfor %}
+              </div>
+            {% endif %}
+            {% if project.impact_value %}
+              <div class="kr-impact">
+                <span class="value">{{ project.impact_value }}</span>
+                <span class="label">{{ project.impact_label }}</span>
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if site.personal.size > 0 %}
+<section class="kr-band kr-band--surface" id="portfolio">
+  <div class="kr-wrap">
+    <div class="kr-sechead">
+      <div>
+        <h2>{{ page.portfolio_title | default: "Data portfolio" }}</h2>
+        <p>{{ page.portfolio_blurb }}</p>
+      </div>
+    </div>
+
+    <div class="kr-cards kr-cards--four">
+      {% for project in site.personal %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% assign about = content | strip %}
+{% if about != '' %}
+<section class="kr-band">
+  <div class="kr-wrap">
+    <div class="kr-sechead"><div><h2>{{ page.about_title | default: "About" }}</h2></div></div>
+    <div class="kr-prose">{{ content }}</div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.toolkit %}
+<section class="kr-band">
+  <div class="kr-wrap">
+    <div class="kr-sechead"><div><h2>{{ page.toolkit_title | default: "Toolkit" }}</h2></div></div>
+    <div class="kr-toolkit">
+      {% for group in page.toolkit %}
+        <div class="kr-toolgroup">
+          <span class="kr-micro">{{ group.label }}</span>
+          <ul>
+            {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.contact %}
+<section class="kr-band kr-contact">
+  <div class="kr-wrap">
+    <div>
+      <h2>{{ page.contact.heading }}</h2>
+      <p>{{ page.contact.blurb }}</p>
+    </div>
+    <div class="kr-links">
+      {% for link in site.author.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

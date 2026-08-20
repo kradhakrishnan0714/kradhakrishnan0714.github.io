@@ -3,6 +3,9 @@ layout: single
 title: "Predicting Success of Telemarketing Campaigns"
 classes: wide
 date: 2025-03-08
+thumb_label: "R · Model comparison"
+card_summary: "Three models — logistic regression, LDA, and random forest — compared on predictive performance to select the strongest classifier."
+tech: ["R", "Classification"]
 ---
 
 **Description**: Predicting success of telemarketing campaigns using 3 different models (logistic regression, LDA & random forest) and choose the best model based on predictive performance.   

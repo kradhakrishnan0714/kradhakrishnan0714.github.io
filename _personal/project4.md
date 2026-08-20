@@ -1,8 +1,11 @@
 ---
 layout: single
-title: "Performance comparison between delta lake and traditional data lake"
+title: "Delta Lake vs. Traditional Data Lake Performance"
 classes: wide
 date: 2025-03-08
+thumb_label: "Databricks · Benchmark"
+card_summary: "Measuring what ACID guarantees, time travel, and compacted transaction logs actually cost — and save — against a conventional data lake."
+tech: ["Databricks", "Python", "SQL"]
 ---
 
 **Description**: Traditional data lakes often face challenges such as data inconsistency, slow query performance, and the absence of transactional guarantees, leading to inefficiencies in data management and analysis, particularly with streaming and large-scale datasets.

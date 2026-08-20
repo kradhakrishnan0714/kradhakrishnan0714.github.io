@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign projects = site[page.collection] %}
+
+<section class="kr-band">
+  <div class="kr-wrap">
+    <div class="kr-sechead">
+      <div>
+        <h2>{{ page.title }}</h2>
+        <div class="kr-sechead__intro">{{ content }}</div>
+      </div>
+      <span class="kr-seclink">{{ projects.size }} projects</span>
+    </div>
+
+    <div class="kr-cards{% if page.columns == 4 %} kr-cards--four{% endif %}">
+      {% for project in projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+{% assign p = include.project %}
+
+<article class="kr-card">
+  {% comment %}
+    A thumbnail appears only when there is something real to show: either a
+    chart from the project itself, or an explicit schema-grid label. Projects
+    with neither (the professional engagements) render as text cards.
+  {% endcomment %}
+  {% if p.header.teaser %}
+    <div class="kr-thumb">
+      <img src="{{ p.header.teaser | relative_url }}" alt="{{ p.teaser_alt | default: p.title }}">
+    </div>
+  {% elsif p.thumb_label %}
+    <div class="kr-thumb kr-thumb--schema"><span>{{ p.thumb_label }}</span></div>
+  {% endif %}
+
+  <div class="kr-card__body">
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+
+    {% if p.card_summary %}<p>{{ p.card_summary }}</p>{% endif %}
+
+    {% if p.tech %}
+      <div class="kr-chips">
+        {% for item in p.tech %}<span class="kr-chip">{{ item }}</span>{% endfor %}
+      </div>
+    {% endif %}
+
+    {% if p.impact_value %}
+      <div class="kr-impact">
+        <span class="value">{{ p.impact_value }}</span>
+        <span class="label">{{ p.impact_label }}</span>
+      </div>
+    {% endif %}
+  </div>
+</article>
