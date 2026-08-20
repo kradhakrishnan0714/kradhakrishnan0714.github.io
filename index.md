@@ -8,8 +8,8 @@ hero:
   first_name: "Karthik"
   last_name: "Radhakrishnan"
   lede: >-
-    I make organizations **trust their data**. Nineteen years building data quality
-    assurance, ETL test automation, and analytics programs — currently leading
+    I enable organizations to **trust their data**. Nineteen years building data quality
+    assurance, ETL test automation, and LLM evaluation frameworks — currently leading
     automation-first quality engineering at **PwC**.
   buttons:
     - label: "View data portfolio"
@@ -34,7 +34,7 @@ metrics:
     label: "Data accuracy sustained across enterprise platform modernization"
   - value: "90%"
     label: "Faster environment provisioning via database virtualization"
-  - value: "80%"
+  - value: "60%"
     label: "Regression effort eliminated through ETL test automation"
   - value: "40%"
     label: "Fewer UAT defects on a multi-domain finance program"
@@ -57,7 +57,7 @@ toolkit:
     items: ["DataGaps", "Azure Data Factory", "Informatica", "Talend", "Delphix"]
   - label: "Practice"
     items:
-      ["ETL test automation", "Data quality frameworks", "Predictive modeling", "Stakeholder reporting"]
+      ["ETL test automation", "LLM evaluation", "Data quality frameworks", "Predictive modeling", "Stakeholder reporting"]
 
 contact:
   heading: "Let's talk data quality."

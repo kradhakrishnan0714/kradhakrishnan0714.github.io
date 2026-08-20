@@ -23,27 +23,33 @@ $header-font-family: $sans-serif-narrow !default;
 $caption-font-family: $sans-serif !default;
 
 /* Palette --------------------------------------------------------------- */
-// Cool, cyan-biased neutrals with a single deep petrol-teal accent.
-$background-color: #f2f5f5 !default;
-$text-color: #0d1417 !default;
-$muted-text-color: #5c6b6d !default;
-$primary-color: #0e6f72 !default;
+// A committed dark theme: cool, cyan-biased darks with a brightened
+// petrol-teal accent that holds contrast against the dark ground.
+$background-color: #0b1113 !default;
+$text-color: #dee8e8 !default;
+$muted-text-color: #7e9294 !default;
+$primary-color: #45b3ae !default;
 
-$link-color: #0e6f72 !default;
-$link-color-hover: #0a5457 !default;
-$link-color-visited: #0e6f72 !default;
+$link-color: #45b3ae !default;
+$link-color-hover: #6fcbc5 !default;
+$link-color-visited: #45b3ae !default;
 
-$border-color: #d3dcdc !default;
-$lighter-gray: #e9eeee !default;
-$light-gray: #d3dcdc !default;
-$gray: #5c6b6d !default;
-$dark-gray: #3a4a4d !default;
-$darker-gray: #0d1417 !default;
+$border-color: #22302f !default;
 
-$footer-background-color: #ffffff !default;
-$masthead-link-color: #0d1417 !default;
-$masthead-link-color-hover: #0e6f72 !default;
-$code-background-color: #e9eeee !default;
+// The theme's grey ramp runs light-to-dark and is used for both surfaces and
+// text. Inverting it here keeps every Minimal Mistakes component that reaches
+// for these (tables, code, notices, the sidebar) correct on a dark ground.
+$lighter-gray: #162124 !default; // subtle raised surface
+$light-gray: #22302f !default; // hairlines
+$gray: #7e9294 !default; // muted text
+$dark-gray: #a9babb !default; // secondary text
+$darker-gray: #dee8e8 !default; // primary text
+
+$footer-background-color: #111a1c !default;
+$masthead-link-color: #dee8e8 !default;
+$masthead-link-color-hover: #45b3ae !default;
+$navicon-link-color-hover: #45b3ae !default;
+$code-background-color: #162124 !default;
 
 // ==========================================================================
 // 2. THEME IMPORTS
@@ -58,18 +64,21 @@ $code-background-color: #e9eeee !default;
 // ==========================================================================
 
 :root {
-  --kr-paper: #f2f5f5;
-  --kr-surface: #ffffff;
-  --kr-surface-2: #e9eeee;
-  --kr-ink: #0d1417;
-  --kr-ink-2: #3a4a4d;
-  --kr-muted: #5c6b6d;
-  --kr-line: #d3dcdc;
-  --kr-line-soft: #e2e9e9;
-  --kr-accent: #0e6f72;
-  --kr-accent-ink: #0a5457;
-  --kr-accent-wash: #e2efef;
-  --kr-shadow: 0 1px 2px rgba(13, 20, 23, 0.04);
+  --kr-paper: #0b1113;
+  --kr-surface: #111a1c;
+  --kr-surface-2: #162124;
+  --kr-ink: #dee8e8;
+  --kr-ink-2: #a9babb;
+  --kr-muted: #7e9294;
+  --kr-line: #22302f;
+  --kr-line-soft: #1a2628;
+  --kr-accent: #45b3ae;
+  --kr-accent-ink: #6fcbc5;
+  --kr-accent-wash: #13292a;
+  --kr-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  // Dark ink for text sitting on the bright accent (solid buttons).
+  --kr-on-accent: #06171a;
 }
 
 // ==========================================================================
@@ -197,12 +206,12 @@ button:focus-visible {
 
   &--solid {
     background: var(--kr-accent);
-    color: var(--kr-surface);
+    color: var(--kr-on-accent);
 
     &:hover {
       background: var(--kr-accent-ink);
       border-color: var(--kr-accent-ink);
-      color: var(--kr-surface);
+      color: var(--kr-on-accent);
     }
   }
 
