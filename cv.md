@@ -17,12 +17,7 @@ Below is a quick snapshot of my CV.
 
 ## Summary
 
-- **Quality Engineering Leader** with **19+ years** of experience in **data quality assurance**, data analysis, ETL test automation, and continuous improvement in data engineering initiatives.
-- Skilled in designing **ETL test automation frameworks** (Python, DataGaps) and championing **“Shift-Left”** best practices for **faster, high-quality releases.**
-- Proven success in leading **cloud migration (AWS, Azure) testing**, DevOps integration, and leveraging **Generative AI** to drive efficiency gains.
-- **Proficient in data visualization** (using Python) and machine learning fundamentals, enabling advanced analytics, predictive insights, and data-driven decisions.
-- Skilled at building and mentoring cross-functional teams, implementing cost-effective solutions, and delivering **enterprise-scale** projects.
-- **Microsoft Azure Cloud Certified**, with strong executive relationship management, stakeholder communication, and strategic leadership abilities.
+Quality Engineering leader with 19 years of experience in Data Quality Assurance, ETL test automation and validation of end-to-end analytics, managing teams of automation engineers validating data from multiple sources to downstream reports. Designed and scaled test automation architecture and tooling (DataGaps, CA TDM, Delphix) that cut manual test effort by 60%, reduced defect leakage by 40%, and improved test coverage by 35%. Hands-on validation of Power BI/analytics dashboards and GenAI applications, including LLM evaluation, plus deep expertise in Python/SQL for data pipeline validation across Databricks and Snowflake.  Proven ability to distill complex technical analyses into concise, business-focused updates for executive stakeholders.
 
 ---
 
@@ -33,17 +28,15 @@ Below is a quick snapshot of my CV.
 - Machine Learning Fundamentals (model building, predictive analytics)
 - Continuous Testing
 - Test Strategy & Automation Architecture
-- Resource Planning & Budgeting
-- Process Re-engineering & People Management
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
 ### Senior Manager, Quality Engineering (PwC) - Oct 2021 to Present
-- **Introduced** a “Shift-Left” automation approach using Python & DataGaps, enabling rapid regression testing and **cutting manual effort by 80%** and **reducing defect leakage by 45%.**
-- **Developed** automation test strategies to validate complex data pipelines, incorporating continuous testing in a DevOps environment that led to a **30% reduction** in overall **test cycle time.**
-- **Established** end-to-end data quality frameworks for multiple Data Engineering and Cloud Migration projects, **ensuring 96%+ data accuracy.**
+- Managed and mentored a team of QA and automation engineers delivering end-to-end data quality frameworks for multiple analytics and data engineering projects, ensuring 96% data accuracy from source to reporting layer.
+- Introduced “Shift-Left” automation approach using SQL & Python for pipeline/data validation and comparisons, cutting manual regression effort by 60% and reducing defect leakage by 40%.
+- Led validation of Power BI dashboards analyzing regulatory compliance data, ensuring accuracy and reliability of executive-facing compliance reporting.
 - **Implemented Generative AI tools** for test case generation and code reviews, **boosting QA team productivity by 20%.**
 - **Spearheaded** test maturity assessments and transformation initiatives across multiple projects,**raising test automation coverage from 30% to 90%** within a year.
 - **Managing** a portfolio of data engineering testing projects with annual budgets of **$10M+**, maintaining consistent on-budget and on-schedule performance.
