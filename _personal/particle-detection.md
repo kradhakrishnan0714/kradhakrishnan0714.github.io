@@ -2,7 +2,9 @@
 layout: single
 title: "Particle Detection with Dense Neural Networks"
 classes: wide
-thumb_label: "PyTorch · 8-model sweep"
+header:
+  teaser: /assets/visuals/particle_detection_validation_accuracy.png
+teaser_alt: "Validation accuracy across eight network architectures"
 card_summary: "Eight dense networks benchmarked on seven million particle-detection events — five scaling depth and width, three varying activation — to separate what architecture buys you from what activation does."
 tech: ["PyTorch", "NumPy", "scikit-learn"]
 ---

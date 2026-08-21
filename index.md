@@ -8,7 +8,7 @@ hero:
   first_name: "Karthik"
   last_name: "Radhakrishnan"
   lede: >-
-    I enable organizations to **trust their data**. Nineteen years building data quality
+    I enable organizations to **trust their data**. 19 years building data quality
     assurance, ETL test automation, and LLM evaluation frameworks — currently leading
     automation-first quality engineering at **PwC**.
   buttons:

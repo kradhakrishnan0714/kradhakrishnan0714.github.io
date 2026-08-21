@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CV"
+title: "Karthik Radhakrishnan"
 author_profile: true
 classes: 
   - sidebar-left
@@ -10,57 +10,57 @@ sidebar:
 permalink: /cv/
 ---
 
-## Karthik Radhakrishnan
-
-Below is a quick snapshot of my CV. 
----
-
 ## Summary
 
-Quality Engineering leader with 19 years of experience in Data Quality Assurance, ETL test automation and validation of end-to-end analytics, managing teams of automation engineers validating data from multiple sources to downstream reports. Designed and scaled test automation architecture and tooling (DataGaps, CA TDM, Delphix) that cut manual test effort by 60%, reduced defect leakage by 40%, and improved test coverage by 35%. Hands-on validation of Power BI/analytics dashboards and GenAI applications, including LLM evaluation, plus deep expertise in Python/SQL for data pipeline validation across Databricks and Snowflake.  Proven ability to distill complex technical analyses into concise, business-focused updates for executive stakeholders.
+Quality Engineering leader with **19** years of experience in Data Quality Assurance, ETL test automation and validation of end-to-end analytics projects, managing teams of automation engineers validating data from multiple sources to downstream reports. Designed and scaled test automation architecture and tooling (DataGaps, CA TDM, Delphix) that **cut manual test effort by 60%, reduced defect leakage by 40%, and improved test coverage by 35%.** **Hands-on validation of Power BI/analytics dashboards and GenAI applications**, including LLM evaluation, plus deep expertise in Python/SQL for data pipeline validation across Databricks and Snowflake.  Proven ability to distill complex technical analyses into concise, business-focused updates for executive stakeholders.
 
 ---
 
 ## CORE COMPETENCIES
 
-- Data Quality Management & ETL Test Automation
-- Data Analysis & Visualization (Python)
-- Machine Learning Fundamentals (model building, predictive analytics)
+- Data Quality Assurance & ETL Test Automation
+- Data Analysis & Visualization
+- Applied Machine Learning
 - Continuous Testing
-- Test Strategy & Automation Architecture
+- Test Strategy Design & Automation Architecture
+
+---
+
+## Technical Skills
+
+- **Programming & Automation**: SQL, Python, Datagaps (Data Validation Automation Tool)
+- **Quality Engineering**: Test Strategy design for Data validation, CI/CD Quality Gates, API testing
+- **DevOps & CI/CD**: Azure DevOps
+- **Data Platforms and BI Tools**: Databricks, Snowflake, Power BI
+- **Test Data Management**: CA TDM, Delphix
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
 ### Senior Manager, Quality Engineering (PwC) - Oct 2021 to Present
-- Managed and mentored a team of QA and automation engineers delivering end-to-end data quality frameworks for multiple analytics and data engineering projects, ensuring 96% data accuracy from source to reporting layer.
-- Introduced “Shift-Left” automation approach using SQL & Python for pipeline/data validation and comparisons, cutting manual regression effort by 60% and reducing defect leakage by 40%.
-- Led validation of Power BI dashboards analyzing regulatory compliance data, ensuring accuracy and reliability of executive-facing compliance reporting.
+- **Managed and mentored** a team of QA and automation engineers delivering end-to-end data quality frameworks for multiple analytics and data engineering projects, **ensuring 96% data accuracy** from source to reporting layer.
+- **Introduced “Shift-Left” automation approach** using SQL & Python for pipeline/data validation and comparisons, **cutting manual regression effort by 60%** and reducing defect leakage by 40%.
+- **Led validation of Power BI dashboards** analyzing regulatory compliance data, ensuring accuracy and reliability of executive-facing compliance reporting.
+- **Owned test planning, estimation, and execution** for 6+ enterprise-wide data platform releases, coordinating with engineering, product, and business stakeholders to define acceptance criteria and manage UAT cycles.
 - **Implemented Generative AI tools** for test case generation and code reviews, **boosting QA team productivity by 20%.**
-- **Spearheaded** test maturity assessments and transformation initiatives across multiple projects,**raising test automation coverage from 30% to 90%** within a year.
-- **Managing** a portfolio of data engineering testing projects with annual budgets of **$10M+**, maintaining consistent on-budget and on-schedule performance.
+- **Built standardized ETL test automation frameworks** adopted org-wide and managed a portfolio of 5+ concurrent QA projects, reducing test cycle time by 35% while maintaining on-budget, on-schedule delivery.
 
 **Key Achievements:**
 
-- **Test Data Management:** Drove adoption of CA Test Data Manager for synthetic data creation,resulting in **90% fewer data-related blockers** and **60% time savings** in test data preparation.
+- **Test Data Management:** Designed an Agentic Framework for synthetic data generation,resulting in **90% fewer data-related blockers** and **60% time savings** in test data preparation.
 - **Data Virtualization:** Reduced cloud infrastructure costs by implementing Delphix virtual databases,**cutting environment provisioning time by 90%** and boosting developer/tester efficiency.
 
-### Senior Consultant, Quality Engineering (Hexaware Technologies) - Oct 2008 to Oct 2021
-- **Led** multiple QA teams focused on **ETL testing, API testing**, data analysis, and **cloud data migration validation** (Snowflake, Azure SQL) for large-scale enterprise clients.
-- **Designed** and implemented Python-based **ETL automation frameworks**, accelerating regression testing and **decreasing defects** in production **by 20%.**
-- Oversaw the end-to-end test life cycle, including UAT coordination and parallel testing, ensuring on-time delivery for high-visibility projects.
-- Built interactive dashboards to highlight data quality metrics, offering executives clear visibility into data readiness and system performance.
+### Senior Consultant, Quality Engineering (Hexaware Technologies) - Oct 2007 to Oct 2021
+- **Led multiple QA teams (5-12 members)** focused on Data Quality Validation, API testing and ETL testing for large-scale enterprise clients.
+- **Designed and implemented** Data Quality frameworks for multiple clients, improved overall data quality metrics by 25%.
+- **Validated analytics dashboards for auto loan portfolio data** at Toyota Financial Services, ensuring accuracy of loan performance metrics and risk reporting used by business stakeholders.
 
-**Key Achievements:**
-
-- **Automation First Approach:** Migrated multiple legacy testing processes to a new automated framework, reducing test execution time from days to hours.
-- **CI/CD Integration:** Integrated automated tests into Azure DevOps pipelines, ensuring nearinstant feedback on code changes and faster release cycles.
 ---
 
 ## Education
 
-- **Master of Science in Data Science (In Progress)**, Southern Methodist University, TX (2024-2026)
+- **Master of Science in Data Science**, Southern Methodist University, TX (2024-2026)
 - **Bachelor of Engineering (Electrical & Electronics)**, Madurai Kamaraj University, India
 
 ---
@@ -70,17 +70,5 @@ Quality Engineering leader with 19 years of experience in Data Quality Assurance
 - **Python for Data Science** - (UC San Diego University)
 - **Modern Big Data Analysis with SQL** - (Cloudera)
 - **Microsoft Certified: Azure Fundamentals**
-
----
-
-## Technical Skills
-
-- **Programming**: SQL, Python, R
-- **Machine Learning**: Model Validation, scikit-learn (basic)
-- **ETL Test Automation Tools**: Datagaps
-- **DevOpes & CI/CD**: Azure DevOps
-- **Data Warehouse Systems**: Azure SQL, Snowflake
-- **Test Data Management**: CA TDM, Delphix
-- **ETL Tools**: Azure Data Factory, Azure Databricks, Informatica 
 
 ---

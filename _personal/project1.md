@@ -3,7 +3,9 @@ layout: single
 title: "Predicting Success of Telemarketing Campaigns"
 classes: wide
 date: 2025-03-08
-thumb_label: "R · Model comparison"
+header:
+  teaser: /assets/visuals/Telemarketing_campaings_model_comparison.png
+teaser_alt: "ROC curves comparing random forest, LDA, and logistic regression"
 card_summary: "Three models — logistic regression, LDA, and random forest — compared on predictive performance to select the strongest classifier."
 tech: ["R", "Classification"]
 ---

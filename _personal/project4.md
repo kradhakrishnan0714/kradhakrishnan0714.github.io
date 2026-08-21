@@ -3,7 +3,9 @@ layout: single
 title: "Delta Lake vs. Traditional Data Lake Performance"
 classes: wide
 date: 2025-03-08
-thumb_label: "Databricks · Benchmark"
+header:
+  teaser: /assets/visuals/delta_lake_comparison.png
+teaser_alt: "Query duration by platform: Delta Lake roughly half the runtime of a traditional data lake across three TPC-H queries"
 card_summary: "Measuring what ACID guarantees, time travel, and compacted transaction logs actually cost — and save — against a conventional data lake."
 tech: ["Databricks", "Python", "SQL"]
 ---
