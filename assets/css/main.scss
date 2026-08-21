@@ -577,6 +577,14 @@ button:focus-visible {
   border-bottom: 1px solid var(--kr-line);
   background: var(--kr-surface-2);
 
+  // The card is a flex column, so this is a flex item — and flex items default
+  // to min-height:auto, which lets each box grow to its image's intrinsic
+  // height and breaks the 16:9 contract. Pinning the basis and clearing the
+  // min-height keeps every thumbnail the same height whatever the source ratio.
+  flex: none;
+  min-height: 0;
+  overflow: hidden;
+
   img {
     width: 100%;
     height: 100%;

@@ -3,8 +3,8 @@ layout: single
 title: "Particle Detection with Dense Neural Networks"
 classes: wide
 header:
-  teaser: /assets/visuals/particle_detection_validation_accuracy.png
-teaser_alt: "Validation accuracy across eight network architectures"
+  teaser: /assets/visuals/particle_detection_confusion_matrix.png
+teaser_alt: "Confusion matrix for the smallest model, S1: 594,695 true negatives and 626,464 true positives against 105,129 false positives and 73,712 false negatives"
 card_summary: "Eight dense networks benchmarked on seven million particle-detection events — five scaling depth and width, three varying activation — to separate what architecture buys you from what activation does."
 tech: ["PyTorch", "NumPy", "scikit-learn"]
 ---
