@@ -8,9 +8,9 @@ hero:
   first_name: "Karthik"
   last_name: "Radhakrishnan"
   lede: >-
-    I enable organizations to **trust their data**. 19 years building data quality
-    assurance, ETL test automation, and LLM evaluation frameworks — currently leading
-    automation-first quality engineering at **PwC**.
+    I enable organizations to **trust their data and their AI**. 19 years building data
+    quality assurance and ETL test automation, now focused on **LLM evaluation, RAG, and
+    agentic AI testing** — currently leading automation-first quality engineering at **PwC**.
   buttons:
     - label: "View data portfolio"
       url: "/projects/personal/"
@@ -26,7 +26,9 @@ hero:
     - label: "Education"
       value: "M.S. Data Science, SMU (2024–2026)"
     - label: "Core stack"
-      value: "SQL · Python · DataGaps"
+      value: "SQL · Python · DeepEval · DataGaps"
+    - label: "AI focus"
+      value: "LLM evaluation, RAG & agentic AI testing"
 
 metrics_title: "Measured impact"
 metrics:
@@ -58,6 +60,8 @@ toolkit:
     items: ["Azure", "Databricks", "Snowflake", "Delta Lake", "Netezza"]
   - label: "Tooling"
     items: ["DataGaps", "Azure Data Factory", "Informatica", "Talend", "Delphix"]
+  - label: "AI Evaluation"
+    items: ["LLM evaluation (DeepEval)", "RAG evaluation", "Hallucination detection", "Agentic AI testing", "MLflow"]
   - label: "Practice"
     items:
       ["ETL test automation", "LLM evaluation", "Data quality frameworks", "Predictive modeling", "Stakeholder reporting"]
@@ -67,9 +71,9 @@ contact:
   blurb: "Open to conversations about quality engineering, data platform modernization, and applied machine learning."
 ---
 
-Hello there! I’m **Karthik**, a Senior Manager in Quality Engineering with over 19 years of experience in data quality assurance, analytics, and ETL test automation. I help organizations trust their data — ensuring accuracy and completeness so businesses can make informed, data-driven decisions.
+Hello there! I’m **Karthik**, an AI Quality Engineering leader with over 19 years of experience in data quality assurance, analytics, and ETL test automation — now focused on validating **Generative AI, LLM, RAG, and agentic systems** for accuracy, reliability, and enterprise readiness.
 
-Currently, I lead transformative projects at **PwC** in Dallas, championing automation-first approaches to streamline quality assurance across data engineering initiatives.
+Currently, I lead transformative projects at **PwC** in Dallas, where I design and own **LLM evaluation frameworks** covering prompt and model regression, retrieval accuracy, faithfulness, and hallucination detection — and enforce them as CI/CD quality gates. I've also architected an **agentic AI framework** of custom agents and reusable skills for generating and validating enterprise synthetic test data, cutting data preparation time by 60% and eliminating over 90% of data availability issues.
 
 I’m passionate about continuous learning — recently completed my **Master’s in Data Science** at **Southern Methodist University (2024–2026)** — and hold certifications in Python for Data Science, Big Data Analysis with SQL, and Microsoft Azure Fundamentals. My technical toolkit centers on **SQL, Python, and Datagaps**, paired with a knack for turning complex data into clear, visual insights.
 
