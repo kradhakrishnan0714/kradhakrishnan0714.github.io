@@ -5,4 +5,4 @@ collection: professional
 permalink: /projects/professional/
 ---
 
-Enterprise data programs led end to end — migration, modernization, and the quality frameworks that kept them honest. Each entry notes the stack involved and the measured outcome.
+AI quality platforms I've owned end to end, plus the enterprise data programs they grew out of. Each entry covers the problem, the stack and the measured outcome.

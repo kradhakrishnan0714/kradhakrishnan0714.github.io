@@ -12,86 +12,82 @@ permalink: /cv/
 
 ## Summary
 
-AI Quality Engineering leader with **19** years of experience building scalable automation frameworks and validating data platforms, now focused on validating **Generative AI, LLM, RAG, and agentic systems** for accuracy, reliability, and enterprise readiness. Designs and owns **LLM evaluation frameworks** covering prompt and model regression, retrieval accuracy, faithfulness and hallucination detection, and enforces them as CI/CD quality gates. Designed and scaled test automation architecture and tooling (DataGaps, CA TDM, Delphix) that **cut manual test effort by 60%, reduced defect leakage by 40%, and improved test coverage by 35%.** Hands-on in **Python and SQL**, with deep expertise validating Power BI/analytics dashboards, data pipelines across Databricks and Snowflake, and GenAI applications. Proven ability to distill complex technical analyses into concise, business-focused updates for executive stakeholders.
+Senior leader who builds and scales **AI quality platforms**, with **19** years turning complex data and ML systems into reliable, enterprise-ready products. Owns the vision and roadmap for **GenAI evaluation** capabilities, applying **"AI QA on AI"** to measure LLM, RAG and agentic systems for faithfulness, hallucination, retrieval accuracy and instruction adherence. These evaluation standards serve as release gates for engineering and business teams. Translates business and risk priorities into platform roadmaps, aligns engineering, data science and business stakeholders, and leads teams that deliver measurable outcomes: **60% less manual effort, 40% fewer escaped defects and 35% broader coverage.** Financial services background spans credit risk models, regulatory compliance reporting and auto finance platforms.
 
 ---
 
-## CORE COMPETENCIES
+## Core Competencies
 
-- LLM Evaluation & RAG Testing
-- Agentic AI & Adversarial Testing
-- Data Quality Assurance & ETL Test Automation
-- Data Analysis & Visualization
-- Applied Machine Learning
-- Continuous Testing
-- Test Strategy Design & Automation Architecture
+- AI Product Strategy & Platform Roadmaps
+- LLM, RAG & Agentic AI Evaluation ("AI QA on AI")
+- Automated Release Gates & AI Quality Standards
+- Cross-Functional & Executive Stakeholder Alignment
+- Team Leadership & Development
+- Data Platforms & Applied Machine Learning
 
 ---
 
 ## Technical Skills
 
-- **LLM & Gen AI Evaluation**: LLM evaluation frameworks (DeepEval), prompt and model-version regression testing, RAG evaluation (retrieval accuracy, faithfulness, answer relevance), hallucination detection, semantic similarity, response consistency, instruction adherence
-- **Agentic AI & Adversarial Testing**: Agentic AI frameworks (custom agents, reusable skills), agent output validation, adversarial testing
-- **LLMOps & MLOps**: MLflow, Databricks, CI/CD quality gates, GitHub Actions, model validation and monitoring, production monitoring, shift-left testing
-- **Programming & Automation**: SQL, Python, Machine learning libraries (scikit-learn, PyTorch), API testing, Datagaps (Data Validation Automation Tool)
-- **Quality Engineering**: Test Strategy design for Data validation, CI/CD Quality Gates, API testing
-- **DevOps & CI/CD**: Azure DevOps
-- **Data Platforms and BI Tools**: Azure ML, Databricks, Snowflake, Power BI
-- **Test Data Management**: CA TDM, Delphix, Great Expectations
+- **GenAI & LLM Evaluation**: DeepEval, prompt and model-version regression, RAG evaluation (retrieval accuracy, faithfulness, answer relevance), hallucination detection, semantic similarity, response consistency, instruction adherence, visual language model evaluation
+- **Agentic AI**: Multi-agent frameworks with custom agents and reusable skills, agent output validation, adversarial testing
+- **AI Ops & Quality Gates**: MLflow, Databricks, GitHub Actions, Azure DevOps, CI/CD release gates, model and production monitoring, shift-left quality
+- **Data & ML Stack**: Python, SQL, PySpark, scikit-learn, PyTorch, Azure ML, Snowflake, Power BI
+- **Data Quality & Test Data**: DataGaps, Great Expectations, Delphix, CA TDM
 
 ---
 
-## PROFESSIONAL EXPERIENCE
+## Professional Experience
 
-### Senior Manager, Quality Engineering (PwC) - Oct 2021 to Present
-- **Established reusable AI evaluation frameworks** for Generative AI applications, measuring instruction adherence, retrieval accuracy, faithfulness, hallucination rate, answer relevance, and model response quality.
-- **Architected enterprise-wide ML quality engineering frameworks** for predictive ML and Generative AI applications, defining automated validation strategies across data, model, API, and system layers.
-- **Designed and implemented an Agentic AI framework** using custom agents and reusable skills to generate and validate enterprise synthetic test data from metadata, schema relationships, and business rules, **reducing data preparation time by 60%** and **eliminating over 90% of data availability issues.**
-- **Managed and mentored** a team of QA and automation engineers delivering end-to-end data quality frameworks for multiple analytics and data engineering projects, **ensuring 96% data accuracy** from source to reporting layer.
-- **Introduced “Shift-Left” automation approach** using SQL & Python for pipeline/data validation and comparisons, **cutting manual regression effort by 60%** and reducing defect leakage by 40%.
-- **Led validation of Power BI dashboards** analyzing regulatory compliance data, ensuring accuracy and reliability of executive-facing compliance reporting.
-- **Owned test planning, estimation, and execution** for 6+ enterprise-wide data platform releases, coordinating with engineering, product, and business stakeholders to define acceptance criteria and manage UAT cycles.
-- **Managed a portfolio of 10+ enterprise QA initiatives** while establishing organization-wide quality standards, mentoring engineering teams, and driving consistent testing practices, reducing test cycle time by 35% while maintaining on-budget, on-schedule delivery.
+### Senior Manager, Quality Engineering — AI & ML Quality Platforms (PwC) · Oct 2021 to Present
+- **Product vision for GenAI quality:** Defined and drove the roadmap for reusable "AI QA on AI" evaluation capabilities. Onboarded Generative AI applications onto a standard set of automated assessment criteria: instruction adherence, retrieval accuracy, faithfulness, hallucination rate, answer relevance and response quality.
+- **Platform strategy:** Architected an enterprise-wide ML and GenAI quality platform covering the data, model, API and system layers. This gave product and engineering teams one consistent way to judge release readiness.
+- **Agentic AI product:** Conceived and launched an agentic AI platform of custom agents and reusable skills that turns metadata, schema relationships and business rules into validated enterprise test data. **Cut data preparation time by 60%** and **eliminated over 90% of data availability blockers.**
+- **Closed-loop release gates:** Built Python validation harnesses and CI/CD gates for ML models, APIs and data pipelines. Evaluation results now feed directly into ship/no-ship decisions, **cutting manual regression effort by 60%** and **reducing defect leakage by 40%.**
+- **Team leadership:** Managed and mentored a team of QA and automation engineers delivering end-to-end data quality frameworks across analytics and data engineering programs, **sustaining 96% data accuracy** from source to reporting layer.
+- **Regulatory reporting:** Led validation of Power BI dashboards built on regulatory compliance data, protecting the accuracy of executive-facing compliance reporting.
+- **Portfolio leadership:** Led a portfolio of 10+ enterprise initiatives and 6+ platform releases. Prioritized work against client and leadership goals, defined acceptance criteria with engineering, product and business stakeholders, and set organization-wide quality standards, **reducing test cycle time by 35%** while delivering on budget and on schedule.
 
 **Key Achievements:**
 
-- **LLM Evaluation:** Designed reusable Python evaluation harnesses for automated LLM benchmarking on retrieval accuracy, faithfulness, hallucination rate, semantic similarity, answer relevance, and response consistency, with quality gates integrated into CI/CD via MLflow experiment tracking.
-- **Test Data Management:** Designed an Agentic Framework for synthetic data generation, resulting in **90% fewer data-related blockers** and **60% time savings** in test data preparation.
-- **Data Virtualization:** Reduced cloud infrastructure costs by implementing Delphix virtual databases, **cutting environment provisioning time by 90%** and boosting developer/tester efficiency.
+- **GenAI Evaluation Platform:** Reusable Python evaluation harnesses benchmark LLMs on retrieval accuracy, faithfulness, hallucination rate, semantic similarity, answer relevance and response consistency, with release gates enforced in CI/CD via MLflow.
+- **Agentic Test Data Platform:** **90% fewer data-related blockers** and **60% time savings** in test data preparation.
+- **Data Virtualization:** Delphix virtual databases **cut environment provisioning time by 90%** and reduced cloud infrastructure costs.
 
-### Senior Consultant, Quality Engineering (Hexaware Technologies) - Oct 2007 to Oct 2021
-- **Led multiple QA teams (5-12 members)** focused on Data Quality Validation, API testing and ETL testing for large-scale enterprise clients.
-- **Designed and implemented** Data Quality frameworks for multiple clients, improved overall data quality metrics by 25%.
-- **Validated analytics dashboards for auto loan portfolio data** at Toyota Financial Services, ensuring accuracy of loan performance metrics and risk reporting used by business stakeholders.
+### Senior Consultant, Quality Engineering (Hexaware Technologies) · Oct 2007 to Oct 2021
+- **Team leadership:** Led multiple QA teams of 5 to 12 people delivering data quality validation, API testing and ETL testing for large enterprise clients.
+- **Credit risk model quality:** Owned validation strategy for credit risk prediction models, including automated data quality checks, business rule validation, regression testing and model input verification.
+- **Auto finance analytics:** Validated auto loan portfolio dashboards at Toyota Financial Services, safeguarding the loan performance metrics and risk reporting used by business stakeholders.
+- **Measurable data outcomes:** Designed data quality frameworks for multiple clients, **improving data quality metrics by 25%.**
 
 ---
 
-## Projects
+## Selected Platforms & Products
 
-**Enterprise AI Evaluation Framework**
-- Designed reusable Python evaluation harnesses for automated LLM benchmarking on retrieval accuracy, faithfulness, hallucination rate, semantic similarity, answer relevance, and response consistency.
-- Built configurable evaluation suites enabling regression testing across model versions and prompt templates, with automated quality gates integrated into CI/CD pipelines using MLflow.
+**Enterprise GenAI Evaluation Platform**
+- Configurable LLM benchmarking that scores retrieval accuracy, faithfulness, hallucination rate, semantic similarity, answer relevance and response consistency.
+- Regression comparisons across model versions and prompt templates, so model and prompt changes ship with evidence.
 
-**Agentic AI Synthetic Test Data Generation & Validation Platform**
-- Designed an agentic AI framework of custom agents and reusable skills that generates enterprise-scale synthetic test data from natural language requirements by interpreting data catalogs, schemas, and business rules.
-- Developed specialized validation agents that verify schema compliance, referential integrity, and data quality before generated datasets are released for testing.
+**Agentic AI Test Data Generation & Validation Platform**
+- Users describe the data they need in plain language; agents interpret catalogs, schemas and business rules to generate enterprise-scale datasets.
+- Validation agents check schema compliance, referential integrity and data quality before release, creating a self-checking loop.
 
 **ML Model Evaluation Platform**
-- Designed a reusable Python-based ML evaluation platform automating model benchmarking, regression testing, and deployment validation for classification models, with standardized metrics (Accuracy, Precision, Recall, F1-Score, ROC-AUC, PR-AUC).
+- Automated benchmarking, regression testing and deployment validation for classification models, comparing candidates against production baselines with standardized metrics (Accuracy, Precision, Recall, F1, ROC-AUC, PR-AUC).
 
 ---
 
 ## Education
 
-- **Master of Science in Data Science**, Southern Methodist University, TX (2024-2026)
+- **Master of Science in Data Science**, Southern Methodist University, TX (2024–2026)
 - **Bachelor of Engineering (Electrical & Electronics)**, Madurai Kamaraj University, India
 
 ---
 
 ## Certifications
 
-- **Python for Data Science** - (UC San Diego University)
-- **Modern Big Data Analysis with SQL** - (Cloudera)
+- **Python for Data Science** (UC San Diego)
+- **Modern Big Data Analysis with SQL** (Cloudera)
 - **Microsoft Certified: Azure Fundamentals**
 
 ---
