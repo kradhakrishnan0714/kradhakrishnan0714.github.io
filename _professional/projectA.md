@@ -2,7 +2,6 @@
 layout: single
 title: "Delta Lake Implementation for S/4 HANA Migration"
 date: 2025-03-08
-featured: true
 card_summary: "Replaced an ECC-based SAP Finance system with SAP S/4 HANA public cloud, testing the Azure Databricks pipelines moving financial data into the delta lake and out to downstream applications."
 tech: ["Delta Lake", "Azure Databricks", "SQL", "DataGaps"]
 impact_value: "60%"

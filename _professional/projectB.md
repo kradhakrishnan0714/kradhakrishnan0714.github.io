@@ -2,7 +2,6 @@
 layout: single
 title: "Cloud-Native OLTP Upgrade & Real-Time Compliance Monitoring"
 date: 2025-03-08
-featured: true
 card_summary: "Moved compliance monitoring from batch to real-time processing, swapping Kafka messaging for Azure Service Bus and validating the upgraded OLTP database throughout."
 tech: ["Azure Data Factory", "SQL", "Python", "Delphix"]
 impact_value: "90%"
